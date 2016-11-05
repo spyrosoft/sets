@@ -25,6 +25,7 @@ var deck_properties = {
     3
   ]
 }
+var discard;
 
 function begin_game() {
 	$('.intro').hide();
@@ -34,6 +35,7 @@ function begin_game() {
 
 function build_deck() {
   deck = [];
+  discard = [];
   build_deck_shape();
 }
 
@@ -75,6 +77,7 @@ function permute_number(shape, color, fill) {
 function demo_deck() {
   for (var i = 0; i < 12; i++) {
     var card = deck.pop();
+    discard.push(card);
     var new_card = $('.card-template').clone(true);
     new_card.removeClass('display-none card-template');
     for (var number = 0; number < card.number; number++) {
@@ -90,7 +93,22 @@ function demo_deck() {
         )
       );
     }
-    $('.deck-demo').append(new_card);
+    new_card.attr('id', 'card-' + i);
+    new_card.on('click', card_clicked);
+    $('.gameboard').append(new_card);
+  }
+}
+
+function card_clicked(event) {
+  var selected_cards = $('.card-container.selected');
+  if (selected_cards.length >= 3) {
+    selected_cards.removeClass('selected');
+  }
+  var card = $(this);
+  if (card.hasClass('selected')) {
+    card.removeClass('selected');
+  } else {
+    card.addClass('selected');
   }
 }
 

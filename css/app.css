@@ -22,6 +22,10 @@
 	margin-left: 1%;
 }
 
+.selected .card {
+  background-color: #000000;
+}
+
 /* ---------- General ---------- */
 
 .display-none {
