@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="30"
+   viewBox="0 0 20 30"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="squiggle-teal-partial.svg">
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:isstock="true"
+       inkscape:stockid="Checkerboard"
+       id="Checkerboard"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="2"
+       width="2"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect4972"
+         height="1"
+         width="1"
+         y="0"
+         x="0"
+         style="fill:#008080;stroke:none" />
+      <rect
+         id="rect4974"
+         height="1"
+         width="1"
+         y="1"
+         x="1"
+         style="fill:#008080;stroke:none" />
+    </pattern>
+    <linearGradient
+       id="linearGradient5617"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5619" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313709"
+     inkscape:cx="-3.7621179"
+     inkscape:cy="16.008862"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1600"
+     inkscape:window-height="873"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     objecttolerance="20" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1022.3622)">
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#Checkerboard);fill-opacity:1.0;fill-rule:nonzero;stroke:#008080;stroke-width:0.68400002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6313"
+       sodipodi:sides="5"
+       sodipodi:cx="9.8111067"
+       sodipodi:cy="1036.5406"
+       sodipodi:r1="11.899645"
+       sodipodi:r2="5.9498229"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.9424778"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 9.811107,1024.641 3.497218,7.0861 7.820017,1.1364 -5.658617,5.5157 1.335817,7.7885 -6.9944353,-3.6772 -6.994436,3.6772 1.3358181,-7.7885 -5.6586168,-5.5157 7.8200165,-1.1364 z"
+       inkscape:transform-center-y="-0.99358166"
+       transform="matrix(0.82254874,0,0,0.87439911,1.9298865,132.06897)" />
+  </g>
+</svg>

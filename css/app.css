@@ -1,0 +1,29 @@
+/* ---------- Game ---------- */
+
+.gameboard {
+  margin-top: 1rem;
+}
+
+.card {
+	border-style: solid;
+	border-color: #d0d0d0;
+	border-width: 1px;
+	border-radius: 3px;
+	padding: 0.5rem 0.15rem;
+	text-align: center;
+	background-color: #f9f9f9;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card img {
+	width: 30%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+/* ---------- General ---------- */
+
+.display-none {
+  display: none;
+}
