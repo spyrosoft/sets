@@ -80,36 +80,56 @@ function demo_deck() {
     discard.push(card);
     var new_card = $('.card-template').clone(true);
     new_card.removeClass('display-none card-template');
-    for (var number = 0; number < card.number; number++) {
-      $(new_card).find('.card').append(
-        $(
-          '<img src="images/'
-          + card.shape
-          + '-'
-          + card.color
-          + '-'
-          + card.fill
-          + '.svg">'
-        )
-      );
-    }
+    create_card(card, $(new_card).find('.card'));
     new_card.attr('id', 'card-' + i);
     new_card.on('click', card_clicked);
     $('.gameboard').append(new_card);
   }
 }
 
-function card_clicked(event) {
-  var selected_cards = $('.card-container.selected');
-  if (selected_cards.length >= 3) {
-    selected_cards.removeClass('selected');
+function create_card(card, element) {
+  for (var number = 0; number < card.number; number++) {
+    element.append(
+      $(
+        '<img src="images/'
+        + card.shape
+        + '-'
+        + card.color
+        + '-'
+        + card.fill
+        + '.svg">'
+      )
+    );
   }
+}
+
+function card_clicked(event) {
   var card = $(this);
   if (card.hasClass('selected')) {
     card.removeClass('selected');
   } else {
     card.addClass('selected');
   }
+  var selected_cards = $('.card-container.selected');
+  if (selected_cards.length >= 3) {
+    if (valid_set()) {
+      swap_card(selected_cards[0]);
+      swap_card(selected_cards[1]);
+      swap_card(selected_cards[2]);
+      selected_cards.removeClass('selected');
+    }
+  }
+}
+
+function valid_set() {
+  return true;
+  
+}
+
+function swap_card(card_element) {
+  $(card_element).find('img').remove();
+  var new_card = deck.pop();
+  create_card(new_card, $(card_element).find('.card'));
 }
 
 function shuffle(array) {
